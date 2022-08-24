@@ -20,6 +20,10 @@
     width: 50%;
 }
 
+#high-score {
+    text-decoration: none;
+    color: #5468ff;
+}
 h1 {
     font-size: 3rem;
     margin-bottom: 3rem;
