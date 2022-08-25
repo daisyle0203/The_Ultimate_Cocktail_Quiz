@@ -45,13 +45,9 @@ h1 {
     transform: translateY(-2px);
 }
 
-.choice-number {
-    padding: 2rem 2.5rem;
-    color: #fff;
-}
 
-.choice-text {
-    padding: 2rem;
+.choice {
+    padding: 1rem;
     width: 100%;
     color: #fff;
 }

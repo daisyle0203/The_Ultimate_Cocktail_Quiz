@@ -1,56 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-image: url(./images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .container {
-    text-align: center;
+  text-align: center;
+  border: 3rem #3c4fe0;
 }
 
 h1 {
-    margin-top: 2em;
-    margin-bottom: 0.7em;
-    font-size: 2.5em;
-    color: #3c4fe0;
+  margin-top: 2em;
+  margin-bottom: 0.7em;
+  font-size: 2.5em;
+  color: #3c4fe0;
 }
 
 p {
-    font-size: 1.5em;
-    color: #5468ff;
-    margin-bottom: 1.4em;
-
+  font-size: 1.5em;
+  color: #5468ff;
+  margin-bottom: 1.4em;
 }
 
 .center-btn {
-    text-align: center;
+  text-align: center;
 }
 .button {
-    align-items: center;
-    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
-    border-radius: 6px;
-    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
-    color: #fff;
-    display: inline-flex;
-    height: 2.5em;
-    overflow: hidden;
-    padding-left: 1em;
-    padding-right: 1em;
-    position: relative;
-    text-align: left;
-    text-decoration: none;
-    transition: box-shadow .15s,transform .15s;
-    white-space: nowrap;
-    will-change: box-shadow,transform;
-    font-size: 1.3em;
+  align-items: center;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  color: #fff;
+  display: inline-flex;
+  height: 2.5em;
+  overflow: hidden;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 1.3em;
 }
 
 .button:hover {
-
-    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-    transform: translateY(-2px);
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
 }
 
+.initial {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  margin-left: 1em;
+  height: 2em;
+}
