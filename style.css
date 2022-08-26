@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url(./images/background.png);
+  background-image: url(./images/cocktails-summer-tropical-cocktail-background-with-palm-leaves-vector.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -19,7 +19,6 @@ body {
 
 .container {
   text-align: center;
-  border: 3rem #3c4fe0;
 }
 
 h1 {
@@ -35,9 +34,6 @@ p {
   margin-bottom: 1.4em;
 }
 
-.center-btn {
-  text-align: center;
-}
 .button {
   align-items: center;
   background-image: radial-gradient(
@@ -69,6 +65,11 @@ p {
   transform: translateY(-2px);
 }
 
+.button:active {
+  cursor: pointer;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #8bc27f 100%);
+}
+
 .initial {
   display: flex;
   justify-content: center;
@@ -76,5 +77,25 @@ p {
 
 input {
   margin-left: 1em;
-  height: 2em;
+  height: 1.6em;
+  font-size: 1.3em ;
+}
+
+a {
+  margin: 0.7em
+}
+
+ul {
+  font-size: 2em;
+}
+
+@media (max-width: 500px) {
+  .container {
+   font-size: 0.55rem;
+
+  }
+   input {
+    height: 1.5em;
+    width: 5em;
+   }
 }

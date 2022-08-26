@@ -29,7 +29,7 @@ let problem5 = {
 let problems = [problem1, problem2, problem3, problem4, problem5]
 let counter = 0
 let currentProblem = problems[counter]
-
+let score = 0
 function problemGenerator(problem) {
     let questionEl = document.querySelector("#question")
     let choicesEl = Array.from(document.querySelectorAll(".choice"))
@@ -46,19 +46,36 @@ containerEl.addEventListener("click", function (event) {
 
     if (element.matches(".choice")) {
         let selection = element.textContent.substring(3)
-        console.log(selection)
-        console.log(currentProblem.answer)
+        let result = document.querySelector(".result")
         if (selection !== currentProblem.answer) {
             // incorrect, reduce timer by 10 sec
-            console.log("nay")
+            result.textContent = "Wrong!"
+            timer -= 10
+        } else {
+            result.textContent = "Correct!"
         }
         if (counter < problems.length - 1) {
             counter++
             currentProblem = problems[counter]
             problemGenerator(currentProblem)
         } else {
+            score = timer
+            localStorage.setItem("score", score)
             location.href = './result.html';
         }
     }
 })
 
+let timer = 75
+let timerEl = document.getElementById("time")
+timerEl.textContent = "Time: " + timer
+let interval = setInterval(countDown, 1000)
+function countDown() {
+    timer--
+    timerEl.textContent = "Time: " + timer
+    if (timer === 0) {
+        localStorage.setItem("score", score)
+        clearInterval(interval)
+        location.href = './result.html';
+    }
+}

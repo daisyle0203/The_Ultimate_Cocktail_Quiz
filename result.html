@@ -10,12 +10,13 @@
 <body>
     <div class="container">
         <h1>All done!</h1>
-        <p>Your final Score is 22.</p>
+        <p id="score"></p>
         <div class="initial">
             <p>Enter initials:</p>  
-            <input type="text">
+            <input type="text" name="initial" id="initial">
         </div>
-        <a href="/end.html" class="button">Submit</a>
+        <a onclick="moveToEndHTML()" class="button">Submit</a>
     </div>
+    <script src="result.js"></script>
 </body>
 </html>
