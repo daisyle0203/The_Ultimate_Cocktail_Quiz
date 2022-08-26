@@ -87,6 +87,16 @@ a {
 
 ul {
   font-size: 2em;
+  background: #bae37d;
+  width: 8em;
+  margin: 0 auto;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  list-style: none;
+  color: #135604;
+  font-style: bold;
+  border: 0.1em solid rgb(6, 72, 6);
 }
 
 @media (max-width: 500px) {
