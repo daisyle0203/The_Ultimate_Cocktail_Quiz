@@ -19,5 +19,6 @@
 ---
 ## Screenshot
 ---
+![GIF](https://media.giphy.com/media/qmMajOEYe9iNN0afJ2/giphy.gif)
 ## Link
 [Play Game](https://daisyle0203.github.io/quiz_challenge/)
